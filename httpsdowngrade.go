@@ -2,8 +2,9 @@
 package httpsdowngrade
 
 import (
-	"context"
-	"net/http"
+    "context"
+    "net/http"
+    "os"
 )
 
 // Config the plugin configuration.
@@ -35,5 +36,6 @@ func New(ctx context.Context, next http.Handler, config *Config, name string) (h
 }
 
 func (a *HTTPSDowngrade) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
+    os.Stdout.WriteString("HTTPSDowngrade")
 	a.next.ServeHTTP(rw, req)
 }

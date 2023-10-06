@@ -21,6 +21,7 @@ func CreateConfig() *Config {
 // HTTPSDowngrade a HTTPSDowngrade plugin.
 type HTTPSDowngrade struct {
 	next     http.Handler
+    headers  map[string]string
 	name     string
 }
 

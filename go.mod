@@ -1,3 +1,3 @@
-module github.com/xundaoxd/http-downgrade
+module github.com/xundaoxd/httpsdowngrade
 
 go 1.19

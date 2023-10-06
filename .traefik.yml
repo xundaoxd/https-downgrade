@@ -2,7 +2,7 @@ displayName: HttpDowngrade Plugin
 type: middleware
 iconPath: .assets/icon.png
 
-import: github.com/xundaoxd/http-downgrade
+import: github.com/xundaoxd/httpsdowngrade
 
 summary: 'Downgrade https to http'
 

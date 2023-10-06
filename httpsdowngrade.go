@@ -1,12 +1,9 @@
 // Package plugindemo a demo plugin.
-package httpdowngrade
+package httpsdowngrade
 
 import (
-	"bytes"
 	"context"
-	"fmt"
 	"net/http"
-	"text/template"
 )
 
 type Config struct {

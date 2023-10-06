@@ -61,6 +61,8 @@ linters:
     - gomnd
     - forbidigo
     - varnamelen
+    - errcheck
+    - gosec
 
 issues:
   exclude-use-default: false

@@ -1,7 +1,8 @@
 package httpsdowngrade_test
 
-import "testing"
+import (
+	"testing"
+)
 
-func TestHTTPSDowngrade(t *testing.T) {
-
+func TestHTTPSDowngrade(_ *testing.T) {
 }

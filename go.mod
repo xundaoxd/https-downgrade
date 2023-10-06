@@ -1,3 +1,3 @@
-module github.com/traefik/plugindemo
+module github.com/xundaoxd/http-downgrade
 
 go 1.19

@@ -1,4 +1,4 @@
-// Package httpsdowngrade a HTTPDowngrade plugin.
+// Package httpsdowngrade a HTTPSDowngrade plugin.
 package httpsdowngrade
 
 import (
@@ -18,20 +18,20 @@ func CreateConfig() *Config {
     }
 }
 
-// HTTPDowngrade a HTTPDowngrade plugin.
-type HTTPDowngrade struct {
+// HTTPSDowngrade a HTTPSDowngrade plugin.
+type HTTPSDowngrade struct {
 	next     http.Handler
 	name     string
 }
 
-// New created a new HTTPDowngrade plugin.
+// New created a new HTTPSDowngrade plugin.
 func New(ctx context.Context, next http.Handler, config *Config, name string) (http.Handler, error) {
-	return &HTTPDowngrade{
+	return &HTTPSDowngrade{
 		next:     next,
 		name:     name,
 	}, nil
 }
 
-func (a *HTTPDowngrade) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
+func (a *HTTPSDowngrade) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 	a.next.ServeHTTP(rw, req)
 }

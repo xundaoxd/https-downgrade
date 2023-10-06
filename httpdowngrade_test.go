@@ -1,8 +1,6 @@
 package httpdowngrade_test
 
-import (
-    "testing"
-)
+import "testing"
 
 func TestHTTPDowngrade(t *testing.T) {
 

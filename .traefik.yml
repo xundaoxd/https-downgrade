@@ -1,12 +1,8 @@
-displayName: Demo Plugin
+displayName: HttpDowngrade Plugin
 type: middleware
 iconPath: .assets/icon.png
 
-import: github.com/traefik/plugindemo
+import: github.com/xundaoxd/http-downgrade
 
-summary: '[Demo] Add Request Header'
+summary: 'Downgrade https to http'
 
-testData:
-  Headers:
-    X-Demo: test
-    X-URL: '{{URL}}'

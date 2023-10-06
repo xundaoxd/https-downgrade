@@ -27,6 +27,7 @@ type HTTPSDowngrade struct {
 // New created a new HTTPSDowngrade plugin.
 func New(ctx context.Context, next http.Handler, config *Config, name string) (http.Handler, error) {
 	return &HTTPSDowngrade{
+        headers:  config.Headers,
 		next:     next,
 		name:     name,
 	}, nil

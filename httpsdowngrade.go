@@ -8,11 +8,14 @@ import (
 
 // Config the plugin configuration.
 type Config struct {
+    Headers map[string]string `json:"headers,omitempty"`
 }
 
 // CreateConfig creates the default plugin configuration.
 func CreateConfig() *Config {
-	return &Config{}
+	return &Config{
+        Headers: make(map[string]string),
+    }
 }
 
 // HTTPDowngrade a HTTPDowngrade plugin.

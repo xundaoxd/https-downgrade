@@ -6,3 +6,6 @@ import: github.com/xundaoxd/httpsdowngrade
 
 summary: 'Downgrade https to http'
 
+testData:
+  Headers:
+     X-Demo: test
